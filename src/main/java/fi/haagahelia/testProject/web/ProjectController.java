@@ -6,8 +6,6 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
-
-@Controller
 public class ProjectController {
 
     @RequestMapping("/index")
@@ -28,13 +26,7 @@ public class ProjectController {
             @RequestParam(name = "location", required = true) String location,
             @RequestParam(name = "name", required = true) String name) {
         return "Welcome to the " + location + " " + name + "!";
-    }
+
 }
-
-
-
-
-
-
-
+    
 }
